@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Product</h1>
-    <input type="submit" value="lets go to create page"/>
+    <a href="{{route('product.create')}}">Lets go to create page</a>
     <div>
         @if(session()->has('success'))
             <div>
@@ -50,4 +50,5 @@
         </table>
     </div>
 </body>
+<script src="{{asset('js/product.js')}}"></script>
 </html>
